@@ -35,7 +35,7 @@ class Artist
     if self.find_by_name(name)
       self.find_by_name(name)
     elsif !@@all.include?(name)
-      self.create_by_name(name)
+      self.create(name)
     end
   end
 
